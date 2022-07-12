@@ -1339,6 +1339,10 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1371,6 +1375,10 @@ body::-webkit-scrollbar-thumb {
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:w-6\/12 {
