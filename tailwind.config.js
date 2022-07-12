@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
   theme: {
+    screens: {
+      'xs': '400px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
         primary: '#0f1114',
@@ -10,6 +18,22 @@ module.exports = {
         },
         siteblue: '#3bacb5',
         sitepurple: '#6867c5',
+      
+        animation: {
+            text:'text 5s ease infinite',
+        },
+        keyframes: {
+            text: {
+                '0%, 100%': {
+                   'background-size':'200% 200%',
+                    'background-position': 'left center'
+                },
+                '50%': {
+                   'background-size':'200% 200%',
+                    'background-position': 'right center'
+                }
+            },
+        }
       },
 
       fontFamily: {

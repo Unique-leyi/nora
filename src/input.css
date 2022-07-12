@@ -2,9 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply shadow-sm;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-gray-800 outline-1 rounded-lg outline-gray-700;
+  }
+}
+
 @layer components {
   * {
     @apply transition-colors ease-out;
+  }
+
+  .body_img {
+    background-image: url("img/gradient_bg.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .action-btn {
@@ -36,11 +57,11 @@
   }
 
   .selling-list {
-    @apply animate-pulse bg-primary py-4 px-5 my-3 rounded-lg cursor-pointer relative active:border-2 active:border-sky-600 hover:border-2 hover:border-sky-600 overflow-hidden;
+    @apply animate-pulse bg-primary py-4 px-5 my-5 rounded-lg cursor-pointer relative active:border-2 active:border-sky-600 hover:border-2 hover:border-sky-600 overflow-hidden;
   }
 
   .footer-links {
-    @apply font-semibold text-white mx-8 text-lg;
+    @apply font-semibold text-white mx-8 text-sm;
   }
 
   .footer-icons {
