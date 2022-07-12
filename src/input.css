@@ -36,7 +36,7 @@
   }
 
   .selling-list {
-    @apply animate-pulse bg-primary py-4 px-5 my-3 rounded-lg cursor-pointer relative active:border-2 active:border-sky-600 hover:border-2 hover:border-sky-600 overflow-hidden;
+    @apply animate-pulse bg-primary py-4 px-5 my-5 rounded-lg cursor-pointer relative active:border-2 active:border-sky-600 hover:border-2 hover:border-sky-600 overflow-hidden;
   }
 
   .footer-links {
