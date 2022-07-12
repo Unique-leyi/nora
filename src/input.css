@@ -7,6 +7,13 @@
     @apply transition-colors ease-out;
   }
 
+  .body_img {
+    background-image: url("../public/img/gradient_bg.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .action-btn {
     @apply rounded-full border-2 font-bold text-white border-siteblue bg-gray-700 p-1.5 cursor-pointer text-sm;
   }

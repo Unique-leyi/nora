@@ -567,6 +567,13 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.body_img {
+  background-image: url("../public/img/gradient_bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .action-btn {
   cursor: pointer;
   border-radius: 9999px;
@@ -893,6 +900,10 @@ video {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .transform {
@@ -1253,32 +1264,16 @@ video {
 }
 
 @media (min-width: 400px) {
-  .xs\:text-\[2\.4rem\] {
-    font-size: 2.4rem;
-  }
-
-  .xs\:text-\[1rem\] {
-    font-size: 1rem;
-  }
-
-  .xs\:text-\[2rem\] {
-    font-size: 2rem;
-  }
-
-  .xs\:text-\[1\.6rem\] {
-    font-size: 1.6rem;
-  }
-
-  .xs\:text-\[1\.8rem\] {
-    font-size: 1.8rem;
-  }
-
-  .xs\:text-\[1\.7rem\] {
-    font-size: 1.7rem;
+  .xs\:hidden {
+    display: none;
   }
 
   .xs\:text-\[1\.65rem\] {
     font-size: 1.65rem;
+  }
+
+  .xs\:text-\[1rem\] {
+    font-size: 1rem;
   }
 }
 
@@ -1300,6 +1295,14 @@ video {
     margin-right: auto;
   }
 
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-7\/12 {
     width: 58.333333%;
   }
@@ -1312,6 +1315,21 @@ video {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
