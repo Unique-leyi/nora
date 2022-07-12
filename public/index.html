@@ -13,7 +13,7 @@
 <body class="scrollbar bg-primary font-montserrat body_img">
     <header class="flex justify-between items-center mx-5 my-5 md:mx-16">
         <div>
-            <a class="xs:hidden md:block text-white lg:text-3xl font-bold bg-gradient-to-r bg-clip-text  text-transparent from-siteblue  via-sky-500  to-sitepurple animate-text  xs:text-[1.65rem] sm:text-sm md:text-2xl animate-text" href="#">Nora Swap</a>
+            <a class="xs:hidden sm:block text-white lg:text-3xl font-bold bg-gradient-to-r bg-clip-text  text-transparent from-siteblue  via-sky-500  to-sitepurple animate-text  xs:text-[1.65rem] sm:text-sm md:text-2xl animate-text" href="#">Nora Swap</a>
 
             <a href="#" class="md:hidden">
                 <img src="img/noralogo.png" class="w-14 mx-1">
@@ -21,37 +21,40 @@
 
         </div>
         <div>
-            <a class="bg-gradient-to-r from-sky-500 to-indigo-500  cursor-pointer bg-black uppercase text-white py-3 px-6 md:py-3 md:px-10 rounded-md font-bold text-sm hover:shadow-md lg:text-lg xs:text-[1rem]">Select Wallet</a>
+            <a class="bg-gradient-to-r from-sky-500 to-indigo-500  cursor-pointer uppercase text-white py-3 px-4 md:py-3 md:px-10 rounded-md font-bold text-[1rem] hover:shadow-md lg:text-lg xs:text-[1rem]">Select Wallet</a>
         </div>
     </header>
 
 
     <main class="my-20 bg-secondary-100 mx-5 rounded-2xl p-7 md:w-7/12 md:mx-auto lg:w-6/12 lg:mx-auto shadow-md relative">
-        <section class="my-6">
-            <div class="shadow-sm flex justify-between items-center">
+        <section class="my-2">
+            <div class="shadow-sm my-6 flex justify-between items-center">
                 <a class="action-btn flex justify-between items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-4 w-4 text-white font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-5 w-5 text-white font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                     </svg>
                     <span class="mx-1.5 text-xs">0.1%</span>
                 </a>
                 <a class="action-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-4 w-4 text-white font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-5 w-5 text-white font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                 </a>
             </div>
 
-            <div class="my-8">
-                <div class="flex justify-between items-center my-6 mx-2">
+
+            <!-- Token Exchanges -->
+
+            <div class="my-1">
+                <div class="flex justify-between items-center my-2 mx-2">
                     <h4 class="font-bold text-white">You pay:</h4>
                     <h4 class="flex justify-between items-center font-bold text-white">Balance: <span class="font-bold text-lg mx-2 text-gray-600 ">0</span></h4>
                 </div>
             </div>
             
-            <div class="my-5">
-                <label class="w-full my-8 py-4 px-2  bg-primary flex justify-between items-center rounded-md">
-                    <button class="text-center text-white px-4 py-3 mx-1 flex justify-between items-center font-bold cursor-pointer uppercase hover:bg-secondary-100 hover:rounded-full showToken">usdt
+            <div class="my-1">
+                <label class="w-full my-2 py-4 px-2  bg-primary flex justify-between items-center rounded-md">
+                    <button class="text-center text-white px-4 py-3 mx-1 flex justify-between items-center font-bold cursor-pointer uppercase hover:bg-secondary-100 hover:rounded-lg showToken">usdt
                         <svg xmlns="http://www.w3.org/2000/svg" class=" mx-4 inline-block h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
@@ -135,23 +138,24 @@
             <!-- /Search Component -->
 
 
-
-            <div class="flex justify-center items-center my-1">
-                <button class="text-white my-1">
+            <!-- Reload Icon -->
+            <div class="flex justify-center items-center">
+                <button class="text-white py-4">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-10 h-10 font-bold cursor-pointer motion-safe:animate-bounce"><path d="M5 12a1 1 0 102 0V6.414l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L5 6.414V12zM15 8a1 1 0 10-2 0v5.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L15 13.586V8z"></path></svg>
                 </button>
             </div>
+            <!-- /Reload Icon -->
 
-            <div class="my-2">
-                <div class="flex justify-between items-center my-6 mx-2">
+            <div class="">
+                <div class="flex justify-between items-center mx-2">
                     <h4 class="font-bold text-white">You recieve:</h4>
                     <h4 class="flex justify-between items-center font-bold text-white">Balance: <span class="font-bold mx-2 text-lg text-gray-600 ">0</span></h4>
                 </div>
             </div>
 
-            <div class="my-5">
-                <label class="w-full my-8 py-4 px-2  bg-primary flex justify-between items-center rounded-md">
-                    <button class="text-center text-white px-4 py-3 mx-1 flex justify-between items-center font-bold cursor-pointer uppercase hover:bg-secondary-100 hover:rounded-full showToken">cwar
+            <div class="my-1">
+                <label class="w-full my-2 py-4 px-2  bg-primary flex justify-between items-center rounded-md">
+                    <button class="text-center text-white px-4 py-3 mx-1 flex justify-between items-center font-bold cursor-pointer uppercase hover:bg-secondary-100 hover:rounded-lg showReceive">cwar
                         <svg xmlns="http://www.w3.org/2000/svg" class=" mx-4 inline-block h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
@@ -161,17 +165,91 @@
                 </label>
             </div>
 
+            <!-- Search Component -->
+            <div class="hidden absolute bottom-52 left-0 z-10 w-full rounded-lg bg-gray-700 p-5 shadow-lg lg:w-8/12 lg:mx-auto lg:left-20 transition duration-700 ease-in-out" id="receive">
+                <form class="my-3">
+                   <label class="flex justify-between items-center bg-primary py-2 px-3 rounded-md w-full text-white border-2 border-siteblue">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    
+                    <input type="search" class="bg-transparent w-full mx-3 p-2 focus-within:outline-none focus-within:border-none" placeholder="Filter by token name, symbol">
+                   </label>
+
+                   <ul class="my-4 h-36 overflow-y-auto">
+                    <li class="token-span active-list">
+                        <a class="token-list">Orca - <span class="token-item">orca</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">1Sol - <span class="token-item">sol</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">ALLART - <span class="token-item">aart</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Allbridge - <span class="token-item">abr</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Nirvana ANA - <span class="token-item">ana</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Apricot - <span class="token-item">apt</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Star Atlas - <span class="token-item">atlas</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Audius(Wormhole) - <span class="token-item">audio</span></a>
+                    </li>
+
+                     <li class="token-span">
+                        <a class="token-list">Apricot - <span class="token-item">apt</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Star Atlas - <span class="token-item">atlas</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Audius(Wormhole) - <span class="token-item">audio</span></a>
+                    </li>
+                     <li class="token-span">
+                        <a class="token-list">Apricot - <span class="token-item">apt</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Star Atlas - <span class="token-item">atlas</span></a>
+                    </li>
+
+                    <li class="token-span">
+                        <a class="token-list">Audius(Wormhole) - <span class="token-item">audio</span></a>
+                    </li>
+                   </ul>
+                </form>
+            </div>
+
+            <!-- /Search Component -->
+
+            <!-- /Token Exchanges -->
+
             <div class="my-6 flex justify-center items-center">
                 <button class="w-full mx-6 md:mx-auto md:w-7/12 font-bold text-lg text-white uppercase rounded-full py-2 px-4 bg-gradient-to-r from-siteblue to-sitepurple shadow-lg transform transition-colors duration-1000 ease-in-out  shadow-cyan-500/50 hover:shadow-cyan-500/70">Select Wallet</button>
             </div>
 
 
-            <div class="my-10">
+            <div class="my-10 relative">
                 <ul class="list-none my-14">
+                    <a class="bg-sitepurple  absolute -top-3 z-10 right-0 py-1 px-2 rounded-md text-white font-bold">Best Price</a>
                     <li class="selling-list border-2 border-sky-600">
-                        <a class="bg-sitepurple  absolute top-0 right-0 py-1 px-2 rounded-md text-white font-bold">Best Price</a>
                         <div class="my-1">
-                            <h4 class="flex justify- items-center text-white font-bold text-lg">Raydium 
+                            <h4 class="flex justify- items-center text-white font-bold text-[1rem]">Raydium 
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 inline-block font-bold stroke-slate-50" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg> 
