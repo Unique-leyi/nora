@@ -767,12 +767,12 @@ body::-webkit-scrollbar-thumb {
   right: 0px;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .z-20 {
   z-index: 20;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-5 {
@@ -855,16 +855,12 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 3.5rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .inline-block {
@@ -1080,9 +1076,9 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 0.75rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-4 {
@@ -1095,14 +1091,14 @@ body::-webkit-scrollbar-thumb {
   padding-right: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .py-1 {
@@ -1296,16 +1292,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.65rem;
   }
 
-  .xs\:text-\[1rem\] {
-    font-size: 1rem;
-  }
-
-  .xs\:text-\[0\.8rem\] {
-    font-size: 0.8rem;
-  }
-
   .xs\:text-\[0\.9rem\] {
     font-size: 0.9rem;
+  }
+
+  .xs\:text-\[1rem\] {
+    font-size: 1rem;
   }
 }
 
@@ -1368,8 +1360,8 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
   }
 
-  .lg\:w-6\/12 {
-    width: 50%;
+  .lg\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .lg\:w-8\/12 {
