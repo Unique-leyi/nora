@@ -787,6 +787,14 @@ body::-webkit-scrollbar-thumb {
   top: -0.75rem;
 }
 
+.bottom-60 {
+  bottom: 15rem;
+}
+
+.top-56 {
+  top: 14rem;
+}
+
 .z-10 {
   z-index: 10;
 }
