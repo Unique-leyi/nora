@@ -417,6 +417,24 @@ video {
   height: auto;
 }
 
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  outline-width: 1px;
+  outline-color: #374151;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -568,7 +586,7 @@ video {
 }
 
 .body_img {
-  background-image: url("../public/img/gradient_bg.svg");
+  background-image: url("img/gradient_bg.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -689,8 +707,8 @@ video {
 .footer-links {
   margin-left: 2rem;
   margin-right: 2rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -850,8 +868,8 @@ video {
   display: none;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-4 {
+  height: 1rem;
 }
 
 .h-8 {
@@ -870,20 +888,12 @@ video {
   height: 2.5rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
 .w-14 {
   width: 3.5rem;
 }
 
-.w-5 {
-  width: 1.25rem;
+.w-4 {
+  width: 1rem;
 }
 
 .w-full {
@@ -904,14 +914,6 @@ video {
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-3 {
-  width: 0.75rem;
 }
 
 .transform {
@@ -1025,6 +1027,11 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.via-sky-500 {
+  --tw-gradient-to: rgb(14 165 233 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #0ea5e9, var(--tw-gradient-to);
+}
+
 .to-sitepurple {
   --tw-gradient-to: #6867c5;
 }
@@ -1111,6 +1118,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1119,11 +1131,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-bold {
